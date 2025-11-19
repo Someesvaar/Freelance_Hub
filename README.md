@@ -107,14 +107,10 @@ Recommended:
 
 ## 🧑‍💻 Author
 
-**Somee Svaar V**  
+**Someesvaar V**  
 Bachelor of Engineering – Computer Science (BIT Bengaluru)  
 Email: someesvaar.v@gmail.com  
-LinkedIn / Portfolio: (add links here)
-
-## 📄 License
-
-This project is licensed under the MIT License.
+LinkedIn / Portfolio: https://someesvaar.github.io/MyFirstWebsite/
 
 ## ⭐ Contributions
 
