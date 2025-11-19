@@ -1,6 +1,6 @@
-# Freelanc Hub – AI-Powered Freelance Marketplace
+# Freelance Hub – AI-Powered Freelance Marketplace
 
-Freelanc Hub is a full-stack freelance marketplace platform built with React, Node.js, and Python (Flask). It connects clients with freelancers efficiently using a custom ranking algorithm based on skill relevance, ratings, and efficiency.
+Freelance Hub is a full-stack freelance marketplace platform built with React, Node.js, and Python (Flask). It connects clients with freelancers efficiently using a custom ranking algorithm based on skill relevance, ratings, and efficiency.
 
 ## 🚀 Features
 
@@ -9,7 +9,7 @@ Freelanc Hub is a full-stack freelance marketplace platform built with React, No
 - Secure registration & login  
 - Freelancer profile with skills, bio, rating & completion rate  
 
-### 🧠 AI-Based Ranking Algorithm
+### 🧠 Ranking Algorithm
 Ranks freelancers based on:
 - Skill match percentage  
 - Success/completion rate  
@@ -62,18 +62,12 @@ flask run
 cd frontend  
 npm install  
 npm start  
+npm run dev
 
 ### 3️⃣ Node.js API Server
 
 cd backend  
-npm install  
-npm run dev  
-
-## 🔍 Ranking Algorithm Overview
-
-rank = (skill_match * 0.5) + (avg_rating * 0.3) + (completion_rate * 0.2)
-
-Weights can be optimized using project test data for better matching results.
+python run_web.py  
 
 ## 📌 Environment Variables
 
