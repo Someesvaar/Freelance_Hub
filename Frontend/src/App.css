@@ -1,0 +1,115 @@
+/* ===== Background Gradient ===== */
+        html, body {
+          margin: 0;
+          padding: 0;
+          font-family: "Poppins", sans-serif;
+          background: linear-gradient(135deg, #c084fc, #818cf8, #60a5fa);
+          min-height: 100vh;
+        }
+
+        /* ===== Login Card ===== */
+        .login-card {
+          width: 380px;
+          padding: 40px;
+          border-radius: 25px;
+          background: rgba(255, 255, 255, 0.25);
+          backdrop-filter: blur(18px);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+          box-sizing: border-box; /* Added for better padding control */
+        }
+
+        /* ===== Title ===== */
+        .login-title {
+          text-align: center;
+          color: white;
+          font-size: 32px;
+          font-weight: 800;
+          margin-top: 0; /* Added for spacing */
+          margin-bottom: 20px;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        /* This div groups the label and input */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        /* ===== Labels ===== */
+        .login-label {
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+          display: block;
+          margin-bottom: 6px;
+        }
+
+        /* ===== Inputs ===== */
+        .login-input {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 14px;
+          border: 1px solid rgba(255,255,255,0.6);
+          background: rgba(255,255,255,0.6);
+          font-size: 15px;
+          color: #333;
+          outline: none;
+          transition: 0.2s;
+          box-sizing: border-box; /* Ensures padding doesn't break width */
+          margin-top: 10px; /* Adds space above the input */
+          margin-bottom: 10px; /* Adds space below the input */
+        }
+
+        .login-input:focus {
+          border-color: #a78bfa;
+          box-shadow: 0 0 8px rgba(167, 139, 250, 0.7);
+        }
+
+        /* ===== Button ===== */
+        .login-btn {
+          width: 100%;
+          padding: 14px;
+          margin-top: 10px;
+          border-radius: 14px;
+          border: none;
+          background: linear-gradient(90deg, #6366f1, #8b5cf6);
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.25s;
+        }
+
+        .login-btn:hover {
+          background: linear-gradient(90deg, #8b5cf6, #6366f1);
+          transform: scale(1.02);
+        }
+
+        .login-btn:active {
+          transform: scale(0.97);
+        }
+
+        /* ===== Error Message ===== */
+        .error-msg {
+          background: rgba(255, 100, 100, 0.8);
+          padding: 10px;
+          text-align: center;
+          color: white;
+          border-radius: 12px;
+          margin-bottom: 15px;
+          font-weight: 600;
+          display: none; /* Hide it by default */
+        }
+
+        /* ===== Signup text ===== */
+        .signup-text {
+          color: rgba(255,255,255,0.85);
+          text-align: center;
+          margin-top: 18px;
+        }
+
+        .signup-text span {
+          color: white;
+          font-weight: bold;
+          text-decoration: underline;
+          cursor: pointer;
+        }
