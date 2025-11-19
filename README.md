@@ -1,58 +1,122 @@
 # Freelanc Hub – AI-Powered Freelance Marketplace
 
-Freelanc Hub is a **full-stack freelance marketplace platform** built with **React, Node.js, and Python (Flask)**.  
-It helps clients connect with freelancers efficiently using a **ranking algorithm** that prioritizes skill relevance, ratings, and efficiency.
-
----
+Freelanc Hub is a full-stack freelance marketplace platform built with React, Node.js, and Python (Flask). It connects clients with freelancers efficiently using a custom ranking algorithm based on skill relevance, ratings, and efficiency.
 
 ## 🚀 Features
 
 ### 🔹 User Management
-- Separate **Freelancer and Client accounts**
-- Secure registration & login with authentication
-- Freelancer profile with **skills, bio, rating & completion rate**
+- Separate Freelancer and Client accounts  
+- Secure registration & login  
+- Freelancer profile with skills, bio, rating & completion rate  
 
 ### 🧠 AI-Based Ranking Algorithm
-The platform uses a **custom Python ranking algorithm** to shortlist freelancers based on:
+Ranks freelancers based on:
 - Skill match percentage  
 - Success/completion rate  
 - Average rating  
-- Previous work performance  
+- Previous project performance  
 
-### 🔗 Project & Contract Management
-- Clients can post projects
-- Freelancers can bid
-- Ranking happens dynamically during project assignment
-
----
+### 🔗 Project Management
+- Clients can post projects  
+- Freelancers can bid  
+- Freelancers dynamically ranked per assignment  
 
 ## 🖥️ Tech Stack
 
-| Layer | Technologies |
-|-------|--------------|
-| Frontend | React.js |
-| Backend API | Node.js |
-| Ranking Engine | Python |
-| Web Server | Flask |
-| Database | SQLite |
-| Deployment (tested) | Render, Docker (optional) |
-
----
+Frontend: React.js  
+Backend API: Node.js  
+Ranking Engine: Python  
+Web Server: Flask  
+Database: SQLite  
+Deployment Support: Render, Docker (optional)
 
 ## 📂 Project Structure
 
-📂 Project Structure
+Freelance_Marketplace-main/  
+├── backend/  
+│   ├── app/  
+│   │   ├── models.py  
+│   │   ├── schemas.py  
+│   │   ├── routes.py  
+│   │   ├── ranking_logic.py  
+│   │   ├── external/  
+│   │   │   └── freelancer.py  
+│   │   └── __init__.py  
+│   └── env/  
+├── frontend/  
+│   └── src/  
+└── .vscode/
 
-Freelance_Marketplace-main/
-├── backend/
-│ ├── app/
-│ │ ├── models.py
-│ │ ├── schemas.py
-│ │ ├── routes.py
-│ │ ├── ranking_logic.py
-│ │ ├── external/
-│ │ │ └── freelancer.py
-│ │ └── init.py
-│ └── env/
-├── frontend/
-│ └── src/
+## 🛠️ Installation & Setup
+
+### 1️⃣ Backend (Flask API + Ranking Engine)
+
+cd backend  
+python -m venv env  
+source env/Scripts/activate  (Windows: env\Scripts\activate)  
+pip install -r requirements.txt  
+flask run  
+
+### 2️⃣ Frontend (React)
+
+cd frontend  
+npm install  
+npm start  
+
+### 3️⃣ Node.js API Server
+
+cd backend  
+npm install  
+npm run dev  
+
+## 🔍 Ranking Algorithm Overview
+
+rank = (skill_match * 0.5) + (avg_rating * 0.3) + (completion_rate * 0.2)
+
+Weights can be optimized using project test data for better matching results.
+
+## 📌 Environment Variables
+
+Create a `.env` file in the backend directory:
+
+SECRET_KEY=your_secret_key  
+DATABASE_URL=sqlite:///site.db
+
+## 📡 Sample API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST   | /register | Register user |
+| POST   | /login | Authenticate user |
+| POST   | /project/create | Create project |
+| POST   | /rank/freelancers | Rank freelancers |
+
+## 🔧 Deployment
+
+Recommended:  
+- Containerize backend with Docker  
+- Deploy frontend on Render/Netlify  
+- Use PostgreSQL for production-level database  
+
+## 📎 Future Enhancements
+
+- Dashboard & analytics for freelancers  
+- AI-based recommendation system  
+- Payment integration  
+- Mobile App support  
+
+## 🧑‍💻 Author
+
+**Somee Svaar V**  
+Bachelor of Engineering – Computer Science (BIT Bengaluru)  
+Email: someesvaar.v@gmail.com  
+LinkedIn / Portfolio: (add links here)
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## ⭐ Contributions
+
+Contributions, feedback, and ideas are welcome!  
+If you found this project helpful, please ⭐ star the repo on GitHub.
