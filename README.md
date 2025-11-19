@@ -41,3 +41,18 @@ The platform uses a **custom Python ranking algorithm** to shortlist freelancers
 
 ## 📂 Project Structure
 
+📂 Project Structure
+
+Freelance_Marketplace-main/
+├── backend/
+│ ├── app/
+│ │ ├── models.py
+│ │ ├── schemas.py
+│ │ ├── routes.py
+│ │ ├── ranking_logic.py
+│ │ ├── external/
+│ │ │ └── freelancer.py
+│ │ └── init.py
+│ └── env/
+├── frontend/
+│ └── src/
